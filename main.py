@@ -7,7 +7,7 @@ st.set_page_config(
 	layout='wide'
 )
 
-st.text('🎈Streamlit 프로토타입 만들기')
+st.text('🎈서인욱 : Streamlit 프로토타입 만들기')
 
 st.title('📌PB 리포트 업무 자동화 프로그램 인공지능 리테일 AIR.')
 
