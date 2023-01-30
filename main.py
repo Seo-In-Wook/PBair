@@ -9,23 +9,25 @@ st.set_page_config(
 
 st.text('🎈서인욱 : Streamlit 프로토타입 만들기')
 
-st.title('📌PB 리포트 업무 자동화 프로그램 인공지능 리테일 AIR.')
+st.title('📌PB 리포트 자동화 프로그램 리테일 AIR')
 
-st.header('Header(머리글)을 입력하세요.')
-st.subheader('Subheader(세부 머리글)을 입력하세요.')
+#st.header('Header(머리글)을 입력하세요.')
+#st.subheader('Subheader(세부 머리글)을 입력하세요.')
 
-st.markdown('# H1 #')
-st.markdown('## H2 ##')
-st.markdown('### H3 ###')
-st.markdown('#### H4 ####')
-st.markdown('##### H5 #####')
-st.markdown('###### H6 ######')
+#st.markdown('# H1 #')
+#st.markdown('## H2 ##')
+# st.markdown('### H3 ###')
+# st.markdown('#### H4 ####')
+# st.markdown('##### H5 #####')
+# st.markdown('###### H6 ######')
 
-st.markdown('1. 하나')
-st.markdown('2. 둘')
-st.markdown('3. 셋')
+st.markdown('1. 고객명')
+st.markdown('2. 생년월일')
+st.markdown('3. E-mail')
+st.markdown('4. 한줄 Comment')
+st.markdown('3. 담당 PB')
 
-st.caption('이것은 Caption 입니다.')
+#st.caption('이것은 Caption 입니다.')
 
 st.text('기본 텍스트를 입력합니다.')
 st.code('코드 블록 표시가 가능합니다.')
@@ -64,4 +66,3 @@ symbol_list = st.multiselect('AAPL', (df_stocks['Symbol'].unique()), default='AA
 symbol_list.insert(0, 'Date')
 
 st.line_chart(df_chart[symbol_list], x='Date')
-
